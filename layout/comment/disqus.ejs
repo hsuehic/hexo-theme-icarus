@@ -6,12 +6,15 @@
         <% } %>
         this.page.identifier = '<%= page.disqusId || page.slug %>';
     };
+<<<<<<< HEAD
     (function() { 
         var d = document, s = d.createElement('script');  
         s.src = '//' + '<%= theme.comment.disqus %>' + '.disqus.com/<% if (page.comments) { %>embed.js<% } else { %>count.js<% } %>';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
+=======
+>>>>>>> 0b337c0254d8a0d095777e5307504f3f37385b89
 </script>
 <% } else { %>
     <div id="disqus_thread">
